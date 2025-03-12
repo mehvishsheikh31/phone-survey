@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Phone Addiction Survey Form</title>
+  <link rel="stylesheet" href="surveyform.css" />
+</head>
+<body id="main">
+  <div class="box">
+    <h1 id="title">PHONE ADDICTION SURVEY FORM</h1>
+    <p id="description">
+      Fill this form, it has some basic questions about your day-to-day life. It will collect data of various people of every generation.
+    </p>
+  </div>
+
+  <div class="container">
+    <form action="https://formspree.io/f/xvgkpeyb" id="survey-form" method="POST">
+      <label id="name-label" for="name">Name</label><br>
+      <input id="name" name="name" type="text" placeholder="Enter your name" required><br><br>
+
+      <label id="email-label" for="email">Email</label><br>
+      <input id="email" name="email" type="email" placeholder="Enter your email" required><br><br>
+
+      <label id="number-label" for="number">Age</label><br>
+      <input id="number" name="age" type="number" placeholder="Enter your age" min="1" max="70"><br><br>
+
+      <label for="dropdown">What is your avg screen time?</label><br>
+      <select id="dropdown" name="screen-time">
+        <option>0-1hr</option>
+        <option>2-3hrs</option>
+        <option>3-5hrs</option>
+        <option>5hrs+</option>
+        <option>ashamed to tell</option>
+      </select><br><br>
+
+      <p><b>Most used app?</b></p>
+      <input type="checkbox" name="apps" value="whatsapp"> WhatsApp<br>
+      <input type="checkbox" name="apps" value="instagram"> Instagram<br>
+      <input type="checkbox" name="apps" value="linkedin"> LinkedIn<br>
+      <input type="checkbox" name="apps" value="gaming"> Games<br>
+      <input type="checkbox" name="apps" value="other"> Other<br><br>
+
+      <p><b>Would you like to reduce phone addiction?</b></p>
+      <input type="radio" name="reduce" value="yes"> Yes<br>
+      <input type="radio" name="reduce" value="no"> No<br>
+      <input type="radio" name="reduce" value="failed"> Tried but failed<br><br>
+
+      <p><b>How do you feel when you forget your phone at home?</b></p>
+      <input type="radio" name="feel" value="peaceful"> Peaceful<br>
+      <input type="radio" name="feel" value="anxious"> Anxious<br>
+      <input type="radio" name="feel" value="dead"> Dead inside<br><br>
+
+      <textarea name="thoughts" rows="6" cols="40" placeholder="Feel free to share your thoughts..."></textarea><br><br>
+
+      <button id="submit" type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>

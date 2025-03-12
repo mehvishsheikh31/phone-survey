@@ -1,0 +1,34 @@
+#title{
+  text-align:center;
+  color:darkblue;
+  text-shadow:2px 2px 3px blue;
+
+}
+#description{
+  font-style:italic;
+  text-align:center;
+  color:blue;
+}
+.container{
+  background-image:url("https://t3.ftcdn.net/jpg/11/71/11/24/360_F_1171112420_mzVhhSwXxkwYAsDjyAeJ6fRDK2GC5bJX.jpg");
+  background-size:cover;
+  color:white;
+  border:solid 4px darkblue;
+  max-width:600px;
+  margin: 50px auto;
+  padding: 50px;
+
+
+}
+.box{
+  background-color:rgb(177, 235, 254);
+}
+#submit{
+  background-color:rgb(63, 198, 63);
+}
+#submit:hover{
+  background-color:red;
+}
+#main{
+  background-color:rgb(123, 194, 222);
+}
